@@ -18,7 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
     <!--css custom style-->
     <script>
         tailwind.config = {
@@ -27,14 +30,25 @@
               colors: {
                 clifford: '#da373d',
                 'color-primary': 'rgba(23, 152, 0, 1)',
-                'bg-color-primary' : '#EFEBE3'
+                'bg-color-primary' : '#EFEBE3',
+                'bg-dawat': '#115414',
+                'bg-india-gate': '#102861',
+                'btn-dawat': '#63B76D',
+                'btn-india-gate': '#2A4D97'
               }
             }
           }
         }
       </script>
 
-
+      <style>
+        .font-poppins{
+          font-family: "Poppins", serif;
+        }
+        .font-sora{
+          font-family: "Sora", serif;
+        }
+      </style>
 </head>
 <body class="font-sora">
     <header class="bg-gradient-to-b from-white to-bg-color-primary h-screen-auto">
@@ -96,7 +110,7 @@
             <img src="c2-assets/hero-vegetables.png" alt="" class="mx-auto">
         </section>
     </header>
-    <main class="">
+    <main>
         <!--services section-->
         <section class="container mx-auto w-11/12">
             <h3 class="text-2xl text-color-primary lg:text-4xl font-semibold mb-12">Services</h3>
@@ -141,8 +155,8 @@
                 </div>
             </div>
         </section>
-        <!--arrivals and offers-->
-        <section class="bg-bg-color-primary mt-12 pt-36 pb-32">
+        <!--Popular Products-->
+        <section class="bg-bg-color-primary mt-12 lg:py-32 py-16">
           <div class="container mx-auto w-11/12">
             <h3 class="text-2xl text-color-primary lg:text-4xl font-semibold mb-12">Popular Products</h3>
             <div class="grid grid-cols-2 space-y-1 gap-4 lg:grid-cols-5 lg:grid-rows-3 lg:gap-6">
@@ -151,13 +165,15 @@
                     <div class="px-4 pt-4 card">
                       <h2 class="mt-2 card-title text-white font-bold">30% off</h2>
                       <br>
-                      <p class="font-light text-sm text-black w-2/4">Discover a world of treats, toys and essentials handpicked for you</p>
+                      <p class="font-light text-sm text-black">Discover a world of treats, toys and <br>essentials handpicked for you</p>
                       <br>
                       <div class="card-actions">
                         <button class="btn bg-white text-black py-1 px-7">Buy Now</button>
+                      
                       </div>
                       <img src="c2-assets/vegetable-offer.png" alt="" class="ml-auto w-64">
                     </div>
+                  
                   </div>
 
                   <!--cards-->
@@ -289,6 +305,45 @@
                     </div>
                   
                   
+        </section>
+
+        <!--Arrivals and offers-->
+        <section class="mx-auto container w-11/12 mt-12">
+          <h3 class="text-2xl text-color-primary lg:text-4xl font-semibold mb-12">Arrivals and Offers</h3>
+          <div class="font-poppins grid grid-cols-1 max-lg:space-y-2 lg:grid-cols-3 lg:gap-5">
+            <div class="bg-bg-dawat col-span-2 pt-5 pl-3  rounded-2xl">
+              <div class="flex justify-between">
+                <div class="flex flex-col justify-center items-start">
+                <img src="c2-assets/dawat-logo.png" alt="" class="mb-5">
+                  <button class="btn border-none lg:py-3 lg:px-10 text-white bg-btn-dawat mb-4">Cook Exotic Dishes</button>
+                  <p class="whitespace-nowrap text-3xl text-white font-normal max-lg:mb-5">UP to <span class="font-bold">20% off</span></p>
+                </div>
+                <div>
+                  <img
+                  src="c2-assets/dawat-mock-up.png"
+                  class="" />
+                </div>
+              </div>
+            </div>
+            <div class="bg-bg-india-gate pt-5 pl-3 rounded-2xl">
+              <div class="flex justify-between">
+                <div class="flex flex-col justify-center items-start">
+                <img src="c2-assets/india-gate-logo.png" alt="" class="mb-3">
+                  <button class="btn border-none py-3 px-4 text-white bg-btn-india-gate mb-4">World's No. 1 Rice</button>
+                  <p class="text-nowrap text-3xl text-white font-normal">UP to <span class="font-bold">20% off</span></p>
+                </div>
+                <div>
+                  <img
+                  src="c2-assets/india-gate-mock-up.png"
+                  class="" />
+                </div>
+              </div>
+            </div>
+           
+          
+            
+          
+          </div>
         </section>
     </main>
     <footer>
